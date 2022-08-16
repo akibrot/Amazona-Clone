@@ -1,0 +1,135 @@
+.detailcont {
+  display: flex;
+  height: calc(100vh - 60px);
+  width: 100vw;
+  background-color: white;
+  .image {
+    flex: 0.5;
+    display: flex;
+    align-items: center;
+    justify-content: flex-end;
+    img {
+      height: 90vh;
+    }
+    .backicon {
+      font-size: 2rem;
+      cursor: pointer;
+    }
+  }
+  .disc {
+    flex: 0.2;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    h5 {
+      font-size: 2rem;
+    }
+    .disccont {
+      margin-top: 0vh;
+      height: 360px;
+      .ratings {
+        padding-top: 20px;
+        color: rgb(243, 208, 11);
+      }
+      .rv {
+        color: gray;
+        margin-left: 10px;
+      }
+    }
+    p {
+      font-size: 1.3rem;
+    }
+  }
+  .addtocartcont {
+    flex: 0.3;
+    height: inherit;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    .addcont {
+      .instock {
+        color: green;
+      }
+      .notin {
+        color: red;
+      }
+      height: 350px;
+      margin-left: 10px;
+      display: flex;
+      flex-direction: column;
+      h5 {
+        font-size: 2rem;
+      }
+      p {
+        font-size: 1.3rem;
+      }
+      .button {
+        margin-top: 10px;
+        width: 150px;
+        height: 40px;
+        background-color: gold;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        transition-duration: 0.4s;
+        -webkit-transition-duration: 0.4s;
+        cursor: pointer;
+        font-size: 1.1rem;
+        border: 1px solid black;
+
+      }
+      .button:hover {
+        color: green;
+        font-weight: bolder;
+      }
+      .quantity {
+        border: 1px solid black;
+        margin-top: 10px;
+        width: 150px;
+        height: 40px;
+        display: flex;
+        .left {
+          border-right: 1px solid black;
+
+          transition-duration: 0.4s;
+          -webkit-transition-duration: 0.4s;
+          flex: 0.3;
+          display: flex;
+          align-items: center;
+          justify-content: center;
+          font-size: 1.2rem;
+          cursor: pointer;
+          font-weight: bolder;
+
+        }
+        .right {
+          border-left: 1px solid black;
+          font-weight: bolder;
+          transition-duration: 0.4s;
+          -webkit-transition-duration: 0.4s;
+          flex: 0.3;
+          cursor: pointer;
+          display: flex;
+          align-items: center;
+          justify-content: center;
+          font-size: 1.2rem;
+        }
+        .right:hover{
+            background-color: gold;
+        }
+        .left:hover{
+            background-color:gold ;
+        }
+        .center {
+          display: flex;
+          align-items: center;
+          justify-content: center;
+          font-size: 1.2rem;
+          font-weight: bolder;
+          flex: 0.4;
+          background-color: white;
+        }
+      }
+    }
+  }
+}
